@@ -1,4 +1,4 @@
-const users = { "ahmed":"12345", "fatima":"abcde", "khalid":"password" };
+const users = { "MAX":"12345", "turki":"123123", "wedad":"12345" };
 let currentUser = null;
 document.getElementById('loginBtn').addEventListener('click', function(){
     const u = document.getElementById('username').value;
