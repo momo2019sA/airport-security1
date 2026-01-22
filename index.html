@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>نظام أمني – تسجيل دخول الموظفين + البلاغات</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="loginDiv">
+    <h2>تسجيل دخول الموظف</h2>
+    <input type="text" id="username" placeholder="اسم المستخدم">
+    <input type="password" id="password" placeholder="كلمة المرور">
+    <button id="loginBtn">تسجيل الدخول</button>
+    <p id="loginMsg" style="color:red;"></p>
+</div>
+
+<div id="mapDiv" style="display:none;">
+    <button id="reportBtn">تفعيل البلاغ</button>
+    <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

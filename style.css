@@ -1,0 +1,12 @@
+html, body { margin:0; height:100%; font-family:Arial, sans-serif; }
+#loginDiv, #mapDiv { width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; }
+#loginDiv { background:#f0f0f0; }
+input { padding:10px; margin:5px; font-size:16px; border-radius:5px; border:1px solid #ccc; }
+button { padding:10px 20px; font-size:16px; border:none; border-radius:5px; background:#007bff; color:white; cursor:pointer; }
+#reportBtn { position:absolute; top:10px; left:10px; z-index:1000; }
+#map { width:100%; height:100%; }
+.site-marker { background:#007bff; color:white; padding:6px 10px; border-radius:8px; font-size:13px; font-weight:bold; box-shadow:0 0 10px rgba(0,123,255,0.8);}
+.alert-circle { width:30px; height:30px; border-radius:50%; color:white; font-weight:bold; font-size:14px; display:flex; align-items:center; justify-content:center; position:relative; text-align:center; animation:pulse 1.5s infinite;}
+.alert-circle::before { content:""; position:absolute; inset:-12px; border-radius:50%; background: rgba(255,255,0,0.6); animation:glow 1.5s infinite; z-index:-1;}
+@keyframes pulse {0%{transform:scale(1);}50%{transform:scale(1.4);}100%{transform:scale(1);} }
+@keyframes glow {0%{transform:scale(0.7); opacity:0.6;}50%{transform:scale(1.5); opacity:0.4;}100%{transform:scale(1.8); opacity:0;} }
